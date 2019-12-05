@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DD99197B-336A-4A75-93AF-9283F118C054}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>采购系统</RootNamespace>
+    <AssemblyName>采购系统</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="供应商增改.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="供应商增改.Designer.cs">
+      <DependentUpon>供应商增改.cs</DependentUpon>
+    </Compile>
+    <Compile Include="供应商操作.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="供应商操作.Designer.cs">
+      <DependentUpon>供应商操作.cs</DependentUpon>
+    </Compile>
+    <Compile Include="退换货增改.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="退换货增改.Designer.cs">
+      <DependentUpon>退换货增改.cs</DependentUpon>
+    </Compile>
+    <Compile Include="退换货驳回.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="退换货驳回.Designer.cs">
+      <DependentUpon>退换货驳回.cs</DependentUpon>
+    </Compile>
+    <Compile Include="采购单驳回.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购单驳回.Designer.cs">
+      <DependentUpon>采购单驳回.cs</DependentUpon>
+    </Compile>
+    <Compile Include="采购合同驳回.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购合同驳回.Designer.cs">
+      <DependentUpon>采购合同驳回.cs</DependentUpon>
+    </Compile>
+    <Compile Include="采购申请单增改.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购申请单增改.Designer.cs">
+      <DependentUpon>采购申请单增改.cs</DependentUpon>
+    </Compile>
+    <Compile Include="质检管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="质检管理.Designer.cs">
+      <DependentUpon>质检管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="库存管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="库存管理.Designer.cs">
+      <DependentUpon>库存管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="库存增加.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="库存增加.Designer.cs">
+      <DependentUpon>库存增加.cs</DependentUpon>
+    </Compile>
+    <Compile Include="欢迎界面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="欢迎界面.Designer.cs">
+      <DependentUpon>欢迎界面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="采购管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购管理.Designer.cs">
+      <DependentUpon>采购管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="采购订单增改.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="采购订单增改.Designer.cs">
+      <DependentUpon>采购订单增改.cs</DependentUpon>
+    </Compile>
+    <Compile Include="验收单增改.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="验收单增改.Designer.cs">
+      <DependentUpon>验收单增改.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="供应商增改.resx">
+      <DependentUpon>供应商增改.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="供应商操作.resx">
+      <DependentUpon>供应商操作.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="退换货增改.resx">
+      <DependentUpon>退换货增改.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="退换货驳回.resx">
+      <DependentUpon>退换货驳回.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购单驳回.resx">
+      <DependentUpon>采购单驳回.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购合同驳回.resx">
+      <DependentUpon>采购合同驳回.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购申请单增改.resx">
+      <DependentUpon>采购申请单增改.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="质检管理.resx">
+      <DependentUpon>质检管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="库存管理.resx">
+      <DependentUpon>库存管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="库存增加.resx">
+      <DependentUpon>库存增加.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="欢迎界面.resx">
+      <DependentUpon>欢迎界面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="采购管理.resx">
+      <DependentUpon>采购管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="采购订单增改.resx">
+      <DependentUpon>采购订单增改.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="验收单增改.resx">
+      <DependentUpon>验收单增改.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\采购系统.purchasingDataSetTableAdapters.采购申请单TableAdapter.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="purchasing.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
